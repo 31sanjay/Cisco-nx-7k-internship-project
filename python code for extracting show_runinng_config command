@@ -1,0 +1,41 @@
+import re
+import getopt
+import sys
+import csv  
+the_file=open('out.txt','a',encoding="utf8", errors='ignore')
+#with open("","w") as output:    
+def match(line):
+       x=line.split()
+       if len(x)==2:
+              if x[0]=='interface':
+                    # print(line,end=" ")
+                     print("{:10}".format(line));
+                     the_file.write(line)
+                     #print(line,end=" ")
+                     return True
+              return False
+        
+
+
+with open("sh_tech_eltm_detail.txt",encoding="utf8", errors='ignore') as input:
+      
+    for line in input:
+       if(match(line)):
+              #print(line,end=' ')
+              #output.write(line)
+            
+                for line in input:
+                         #if len(line)==0 or line[0]!=" " :
+                         #          #print(" ")
+                         #          break
+                         if line[0]=="vrf":  
+                                print("{:10}".format(line));
+                         if line[0]=="ip":
+                                print("{:10}".format(line));
+                         if line[0]=="ipv6":
+                                 print("{:10}".format(line));       
+                         #print(line,end=" ")
+                         #print('{:>8} {:>8} {:>8}'.format(*line))          
+                         the_file.write(line)
+
+
