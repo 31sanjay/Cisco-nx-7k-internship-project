@@ -1,0 +1,13 @@
+Value Required interface (.*)
+Value List updown (.*)
+Value List vrf_member (\S+)
+Value List ip_address (\S+)
+Value List ipv6_address (\S+)
+
+Start
+  ^interface ${interface}
+  ^\s+no s* ${updown} 
+  ^\s+.*vrf member ${vrf_member} 
+  ^\s+.*ip address ${ip_address} 
+  ^\s+.*ipv6 address ${ipv6_address} -> Continue
+  ^.* -> Record
