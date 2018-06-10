@@ -1,0 +1,33 @@
+Interface, IP_Addr, Description,State, VRF
+mgmt0, 10.104.102.159, , , management
+Vlan1, , , , 
+Bdi601, , , no shutdown, provider-6001
+nve1, , , no shutdown, 
+Ethernet9/25, 10.10.110.1, MSMR, , underlay
+Ethernet9/26, , , no shutdown, 
+Ethernet9/27, , , no shutdown, 
+Ethernet9/28, , , no shutdown, 
+Ethernet9/29, , , no shutdown, 
+Ethernet9/30, , , no shutdown, 
+Ethernet9/31, , , no shutdown, 
+Ethernet9/32, , , no shutdown, 
+Ethernet9/33, , spine, , underlay
+Ethernet9/34, , , no shutdown, 
+Ethernet9/35, , , no shutdown, 
+Ethernet9/36, , , no shutdown, 
+Ethernet9/37, , , no shutdown, 
+Ethernet9/38, , External, no shutdown, 
+Ethernet9/38.601, , , , 
+Ethernet9/39, , , no shutdown, 
+Ethernet9/40, , , no shutdown, 
+Ethernet9/41, , , no shutdown, 
+Ethernet9/42, , , no shutdown, 
+Ethernet9/43, , , no shutdown, 
+Ethernet9/44, , , no shutdown, 
+Ethernet9/45, , , no shutdown, 
+Ethernet9/46, , , no shutdown, 
+Ethernet9/47, , , no shutdown, 
+Ethernet9/48, , , no shutdown, 
+loopback0, 10.10.10.1, , , underlay
+loopback102, 106.1.102.102, , , provider-6001
+loopback601, 106.1.1.1, , , provider-6001
